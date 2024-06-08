@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 106,6,182,1;
+    --background-end-rgb: 152,15,156,1;
   }
 }
 
@@ -29,5 +29,16 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.curved-border {
+  border-radius: 70px 70px 0 0; /* Aplica un radio de borde solo en las esquinas superiores */
+}
+
+
+@media (min-width: 768px) {
+  .curved-border {
+    border-radius: 10px 10px 0 0; /* Aplica un radio de borde solo en las esquinas superiores */
   }
 }
