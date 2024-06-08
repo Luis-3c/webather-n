@@ -1,5 +1,5 @@
 "use client";
-import Current from "@/components/current";
+import CurrentWeather from "@/components/currentWeather";
 import NextDays from "@/components/nextDays";
 import NextHours from "@/components/nextHours";
 import { Weather } from "@/interfaces/weather";
@@ -22,7 +22,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col justify-start pt-6 lg:pt-0 lg:flex-row">
       {data && (
         <>
-          <Current
+          <CurrentWeather
             location={data.location}
             current={data.current}
             today={data.forecast.forecastday[0]}

@@ -7,7 +7,7 @@ interface Props {
     today: ForecastDay
 };
 
-export default function Current({location, current, today}: Props) {
+export default function CurrentWeather({location, current, today}: Props) {
     const {name, country} = location;
     const {temp_c, condition} = current;
     const {day} = today;
